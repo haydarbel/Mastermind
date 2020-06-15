@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family:  'Tahoma', Geneva, Verdana, sans-serif;
+  font-family:  'Roboto',Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
   background-color: 
@@ -11,17 +11,19 @@ body{
 
 #main-tag{
   display: inline-block;
-  margin: 30px 0;
+  margin: 15px 0;
+  color: #101c31;
 }
 #bord{
   text-align: center;
   float: left;
-  padding-left: 100px;
+  padding-left: 125px;
 }
 #scores{
 background-color: ;
 position: relative;
 top:20px;
+left: 50px;
 line-height: 17px;
 padding-left: ;
 }
@@ -31,24 +33,23 @@ padding-left: ;
 
 }
 .kleur{
-  padding-left: 70px;
+  padding-left: 80px;
 }
 
 #guess-row{
   display: inline-block;
-  margin: 10px 100px;
-  border: 2px solid black;
+  margin: 5px 120px;
+  border: 2px solid #101c31;
   border-radius: 15px;
   font-size: xx-large;
-
  }
  .rondjes{
    list-style: none;
    display: flex;
    flex-wrap: wrap;
    flex-direction: column;
-   width: 50px;
-   height: 50px;
+   width: 44px;
+   height: 44px;
  }
 .rond{
   display: inline-block;
@@ -70,8 +71,8 @@ padding-left: ;
   display: inline-block;
   background-color:#9097a1;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
   margin: 10px 5px;
   text-align: center;
 }
@@ -80,7 +81,7 @@ padding-left: ;
 }
 #game{
   width: 500px;
-  height: 900px;
+  height: 1000px;
   background-color: #203862;
   margin: 20px auto;
   text-align: center;
@@ -89,8 +90,8 @@ padding-left: ;
 
 .start-button{
   border: none;
-  width: 50px;
-  height: 50px;
+  width: 44px;
+   height: 44px;
   border-radius: 50%;
   background-color: #202020;
   color: white;
@@ -117,8 +118,20 @@ padding-left: ;
 #blue{
   background-color: #001EFF;
 }
+#bruin{
+  background-color: 	#604439;
+}
+#pink{
+  background-color: #ef4f91;
+}
 .red{
   background-color:#d51c1c ;
+}
+.pink{
+  background-color: #ef4f91;
+}
+.bruin{
+background-color: 	#604439;
 }
 .green{
   background-color:#46a100 ;
@@ -162,8 +175,8 @@ padding-left: ;
 }
 .checkButton{
   border: none;
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background-color: #e55c00;
   color: black;
@@ -181,8 +194,8 @@ padding-left: ;
 
 .clearButton{
   border: none;
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
   color: black;
@@ -199,8 +212,8 @@ padding-left: ;
 }
 .verwijderButton{
   border: none;
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
   color: black;
@@ -214,4 +227,12 @@ padding-left: ;
 }
 .verwijderButton:hover:enabled{
   background-color: #e5e5e5;
+}
+.opbuttons{
+  display: inline-block;
+  margin: 5px 10px;
+}
+#spr{
+  position: relative;
+  left: 60px;
 }

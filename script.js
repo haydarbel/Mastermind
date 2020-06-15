@@ -1,4 +1,4 @@
-const colors = { 0: "red", 1: "blue", 2: "green", 3: "yellow" };
+const colors = { 0: "red", 1: "blue", 2: "green", 3: "yellow",4:"pink",5:"bruin" };
 
 let gekozen = [];
 
@@ -7,8 +7,6 @@ var gekozenChck = [];
 let kies = [];
 
 let actifeLine = document.getElementsByClassName('active-row');
-
-// var signal = document.getElementById('allRondjes');
 
 let guessRow=document.getElementById('guess-row');
 
@@ -22,23 +20,32 @@ var blackRond = 0;
 
 var geleRond = 0;
 
-var poningen = 8;
+var poningen = 10;
 
-var line8 = document.getElementById("line8");
+var line10 = document.getElementById("line10");
+var allReds=document.getElementsByClassName("red");
+var allBlues=document.getElementsByClassName('blue');
+var allYellows=document.getElementsByClassName('yellow');
+var allGreens=document.getElementsByClassName('green');
+var allBlacks=document.getElementsByClassName('black');
+var allWhites=document.getElementsByClassName('white');
+var allPinks=document.getElementsByClassName('pink');
+var allBruins=document.getElementsByClassName('bruin');
 
 const startButton = document.getElementsByClassName("opbuttons")[0];
 
-
 var start = function () {
   generate();
-  line8.className += "active-row"
-  line8.firstElementChild.className += " active";
+  line10.className += "active-row"
+  line10.firstElementChild.className += " active";
   document.getElementById('checkButton').disabled = false;
   document.getElementById('start-button').disabled = true;
   document.getElementById('red').disabled = false;
   document.getElementById('blue').disabled = false;
   document.getElementById('green').disabled = false;
   document.getElementById('yellow').disabled = false;
+  document.getElementById('pink').disabled = false;
+  document.getElementById('bruin').disabled = false;
   startButton.innerHTML=""
   var buttonCover=document.createElement("td");
   var resetButton=document.createElement("button");
@@ -53,7 +60,7 @@ var start = function () {
 
 var generate = function () {
   for (let i = 0; i < 4; i++) {
-    gekozen[i] = colors[Math.floor(Math.random() * 4)];
+    gekozen[i] = colors[Math.floor(Math.random() * 6)];
   }
   for (let i = 0; i < gekozen.length; i++) {
     gekozenChck.push(gekozen[i]);
@@ -125,6 +132,8 @@ var checkAll = function () {
         document.getElementById('blue').disabled = true;
         document.getElementById('green').disabled = true;
         document.getElementById('yellow').disabled = true;
+        document.getElementById('pink').disabled = false;
+        document.getElementById('bruin').disabled = false;
         for(let i=0; i<gekozen.length; i++){
         guessRow.getElementsByClassName('circle')[i].innerHTML="";
         guessRow.getElementsByClassName('circle')[i].className+=` ${gekozen[i]}`;
@@ -144,12 +153,7 @@ var checkAll = function () {
 }
 
 var allClear= function(){
-  var allReds=document.getElementsByClassName("red");
-  var allBlues=document.getElementsByClassName('blue');
-  var allYellows=document.getElementsByClassName('yellow');
-  var allGreens=document.getElementsByClassName('green');
-  var allBlacks=document.getElementsByClassName('black');
-  var allWhites=document.getElementsByClassName('white');
+
   for(var i=0; i<allReds.length;){
     allReds[i].classList.remove("red");
   }
@@ -168,7 +172,13 @@ var allClear= function(){
   for(var i=0; i<allWhites.length;){
     allWhites[i].classList.remove("white");
   }
-  poningen=8;
+  for(var i=0; i<allPinks.length;){
+    allPinks[i].classList.remove("pink");
+  }
+  for(var i=0; i<allBruins.length;){
+    allBruins[i].classList.remove("bruin");
+  }
+  poningen=10;
   gekozen=[];
   gekozenChck=[];
   kies=[];
@@ -199,8 +209,11 @@ var allClear= function(){
   document.getElementById('blue').disabled = true;
   document.getElementById('green').disabled = true;
   document.getElementById('yellow').disabled = true;
+  document.getElementById('pink').disabled = true;
+  document.getElementById('bruin').disabled = true;
 }
- var verwijder = function() {
+
+var verwijder = function() {
    if(document.querySelector(".active")){
      if(document.querySelector(".active").previousElementSibling){
       document.querySelector(".active").previousElementSibling.className ="circle";
@@ -212,7 +225,7 @@ var allClear= function(){
     document.querySelector(".active-row").lastElementChild.classList += " active"
    }
    kies.pop()
- }
+}
 
 
 

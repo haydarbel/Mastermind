@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="game">
@@ -19,6 +20,7 @@
          </tr>
        </table>
       </div>
+      <br><h3 id="resultaat"></h3>
       <div id="bord">
         <table id="circles">
           <tr id="line1" class="row">
@@ -28,7 +30,7 @@
             <td class="circle"></td>
 
           </tr>
-          <tr id="line2"  class="row">
+          <tr id="line2" class="row">
             <td class="circle"></td>
             <td class="circle"></td>
             <td class="circle"></td>
@@ -42,7 +44,7 @@
             <td class="circle"></td>
 
           </tr>
-          <tr id="line4" class="row">
+          <tr id="line4"  class="row">
             <td class="circle"></td>
             <td class="circle"></td>
             <td class="circle"></td>
@@ -70,7 +72,21 @@
             <td class="circle"></td>
 
           </tr>
-          <tr id="line8" class="row ">
+          <tr id="line8" class="row">
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+
+          </tr>
+          <tr id="line9" class="row">
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+
+          </tr>
+          <tr id="line10" class="row ">
             <td class="circle"></td>
             <td class="circle"></td>
             <td class="circle"></td>
@@ -151,6 +167,24 @@
             <td class="rond"></td>
           </tr>
         </table>
+        <br>
+        <table>
+          <tr id="rondjes9" class="rondjes">
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+          </tr>
+        </table>
+        <br>
+        <table>
+          <tr id="rondjes10" class="rondjes">
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+          </tr>
+        </table>
         
       </td>
       </div>
@@ -159,35 +193,27 @@
       <div class="kleur">
       <table>
         <tr class="row">
-          <td class="circle"><button id="red" class="btn-md " value="red"  onclick="toevoegen('red')" disabled></button></td>
+          <td class="circle"><button id="red" class="btn-md "   onclick="toevoegen('red')" disabled></button></td>
           <td class="circle "><button id="blue"  class="btn-md "  onclick="toevoegen('blue')" disabled></button></td>
           <td class="circle "><button id="green"  class="btn-md " onclick="toevoegen('green')" disabled></button></td>
           <td class="circle "><button id="yellow"  class="btn-md " onclick="toevoegen('yellow')" disabled></button></td>
-          <td >
-            <table>
-              <tr class="rondjes opbuttons">
-                <td><button id="start-button" class="start-button" onclick="start()">START</button></td>
-              </tr>
-            </table>
-          </td>
-          <td >
-            <table>
-              <tr class="rondjes opbuttons">
-                <td><button id="checkButton" class="checkButton" onclick="checkAll()" disabled>CHECK</button></td>
-              </tr>
-            </table>
-          </td>
-          <td >
-            <table>
-              <tr class="rondjes opbuttons">
-                <td><button id="verwijderButton" class="verwijderButton" onclick="verwijder()" >DEL</button></td>
-              </tr>
-            </table>
-          </td>
+          <td class="circle "><button id="pink"  class="btn-md " onclick="toevoegen('pink')" disabled></button></td>
+          <td class="circle "><button id="bruin"  class="btn-md " onclick="toevoegen('bruin')" disabled></button></td>
         </tr>
       </table>      
+      <table id="spr">
+        <tr class="rondjes opbuttons">
+          <td><button id="start-button" class="start-button" onclick="start()">START</button></td>
+        </tr>
+        <tr class="rondjes opbuttons">
+          <td><button id="checkButton" class="checkButton" onclick="checkAll()" disabled>CHECK</button></td>
+        </tr>
+        <tr class="rondjes opbuttons">
+          <td><button id="verwijderButton" class="verwijderButton" onclick="verwijder()" >DEL</button></td>
+        </tr>
+        </table>
       </div>
-      <br><h1 id="resultaat"></h1>
+      
     </div>
   
   <script src="script.js"></script>
