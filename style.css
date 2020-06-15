@@ -8,6 +8,7 @@ body{
   background-color: 
   #526585;
 }
+
 #main-tag{
   display: inline-block;
   margin: 30px 0;
@@ -79,9 +80,9 @@ padding-left: ;
 }
 #game{
   width: 500px;
-  height: 960px;
+  height: 95vh;
   background-color: #203862;
-  margin: 0 auto;
+  margin: 20px auto;
   text-align: center;
   border-radius: 10px;
 }
@@ -105,28 +106,28 @@ padding-left: ;
   transform: scale(0.93);
 }
 #red{
-  background-color:red ;
+  background-color: #d51c1c ;
 }
 #green{
-  background-color:green ;
+  background-color:#46a100 ;
 }
 #yellow{
-  background-color: yellow;
+  background-color: #ffe700;
 }
 #blue{
-  background-color: blue;
+  background-color: #001EFF;
 }
 .red{
-  background-color:red ;
+  background-color:#d51c1c ;
 }
 .green{
-  background-color:green ;
+  background-color:#46a100 ;
 }
 .yellow{
-  background-color: yellow;
+  background-color: #ffe700;
 }
 .blue{
-  background-color: blue;
+  background-color: #001EFF;
 }
 .black{
   background-color: black;
