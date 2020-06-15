@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family:  'Tahoma', Geneva, Verdana, sans-serif;
+}
+body{
+  background-color: 
+  #526585;
+}
+#main-tag{
+  display: inline-block;
+  margin: 30px 0;
+}
+#bord{
+  text-align: center;
+  float: left;
+  padding-left: 100px;
+}
+#scores{
+background-color: ;
+position: relative;
+top:20px;
+line-height: 17px;
+padding-left: ;
+}
+#circles{
+  text-align: center;
+  margin: 0 auto;
+
+}
+.kleur{
+  padding-left: 70px;
+}
+
+#guess-row{
+  display: inline-block;
+  margin: 10px 100px;
+  border: 2px solid black;
+  border-radius: 15px;
+  font-size: xx-large;
+
+ }
+ .rondjes{
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   width: 50px;
+   height: 50px;
+ }
+.rond{
+  display: inline-block;
+  background-color: #9097a1;
+  border-radius: 50%;
+  width: 40%;
+  height: 40%;
+  margin: 1px;
+}
+.rondblack{
+  display: inline-block;
+  background-color:black;
+  border-radius: 50%;
+  width: 40%;
+  height: 40%;
+  margin: 1px;
+}
+.circle{
+  display: inline-block;
+  background-color:#9097a1;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 10px 5px;
+  text-align: center;
+}
+.clear{
+  clear: both;
+}
+#game{
+  width: 500px;
+  height: 960px;
+  background-color: #203862;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.start-button{
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #050505;
+  color: white;
+  font-size: small;
+}
+.start-button:hover:enabled{
+  background-color:#383838;
+}
+.start-button:focus{
+  outline: none;
+}
+.start-button:active{
+  transform: scale(0.93);
+}
+#red{
+  background-color:red ;
+}
+#green{
+  background-color:green ;
+}
+#yellow{
+  background-color: yellow;
+}
+#blue{
+  background-color: blue;
+}
+.red{
+  background-color:red ;
+}
+.green{
+  background-color:green ;
+}
+.yellow{
+  background-color: yellow;
+}
+.blue{
+  background-color: blue;
+}
+.black{
+  background-color: black;
+}
+.white{
+  background-color:white;
+}
+.btn-md{
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  border: inherit;
+
+}
+.btn-md:active{
+  transform: scale(0.93);
+}
+.btn-md:focus{
+  outline: none;
+}
+.active-row{
+  background-color:#526585;
+}
+.active{
+  border: 5px solid whitesmoke;
+}
+.checkButton{
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  color: black;
+  font-size: small;
+}
+.checkButton:active{
+  transform: scale(0.93);
+}
+.checkButton:focus{
+  outline: none;
+}
+.checkButton:hover:enabled{
+  background-color: antiquewhite;
+}
+
+.clearButton{
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: purple;
+  color: black;
+  font-size: small;
+}
+.clearButton:active{
+  transform: scale(0.93);
+}
+.clearButton:focus{
+  outline: none;
+}
+.clearButton:hover:enabled{
+  background-color: plum;
+}

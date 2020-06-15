@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game">
+      <h1 id="main-tag">MASTERMIND</h1>
+      <div class="guessBord">
+       <table>
+         <tr id="guess-row" class="row">
+           <td class="circle">?</td>
+           <td class="circle">?</td>
+           <td class="circle">?</td>
+           <td class="circle">?</td>
+         </tr>
+       </table>
+      </div>
+      <div id="bord">
+        <table id="circles">
+          <tr id="line1" class="row">
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+
+          </tr>
+          <tr id="line2"  class="row">
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+
+          </tr>
+          <tr id="line3" class="row">
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+
+          </tr>
+          <tr id="line4" class="row">
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+
+          </tr>
+          <tr id="line5" class="row">
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+
+          </tr>
+          <tr id="line6" class="row">
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+
+          </tr>
+          <tr id="line7" class="row">
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+
+          </tr>
+          <tr id="line8" class="row ">
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+            <td class="circle"></td>
+
+          </tr>
+        </table>
+      </div>
+      <div id="scores">
+        <table>
+          <tr id="rondjes1" class="rondjes">
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+          </tr>
+        </table>
+        <br>
+        <table>
+          <tr id="rondjes2" class="rondjes">
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+          </tr>
+        </table>
+        <br>
+        <table>
+          <tr  id="rondjes3" class="rondjes">
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+          </tr>
+        </table>
+        <br>
+        <table>
+          <tr id="rondjes4" class="rondjes">
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+          </tr>
+        </table>
+        <br>
+        <table>
+          <tr id="rondjes5" class="rondjes">
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+          </tr>
+        </table>
+        <br>
+        <table>
+          <tr id="rondjes6" class="rondjes">
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+          </tr>
+        </table>
+        <br>
+        <table>
+          <tr id="rondjes7" class="rondjes">
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+          </tr>
+        </table>
+        <br>
+        <table>
+          <tr id="rondjes8" class="rondjes">
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+            <td class="rond"></td>
+          </tr>
+        </table>
+        
+      </td>
+      </div>
+      <div class="clear">
+      </div>
+      <div class="kleur">
+      <table>
+        <tr class="row">
+          <td class="circle"><button id="red" class="btn-md " value="red"  onclick="toevoegen('red')" disabled></button></td>
+          <td class="circle "><button id="blue"  class="btn-md "  onclick="toevoegen('blue')" disabled></button></td>
+          <td class="circle "><button id="green"  class="btn-md " onclick="toevoegen('green')" disabled></button></td>
+          <td class="circle "><button id="yellow"  class="btn-md " onclick="toevoegen('yellow')" disabled></button></td>
+          <td >
+            <table>
+              <tr class="rondjes">
+                <td><button id="start-button" class="start-button" onclick="start()">START</button></td>
+              </tr>
+            </table>
+          </td>
+          <td >
+            <table>
+              <tr class="rondjes">
+                <td><button id="checkButton" class="checkButton" onclick="checkAll()" disabled>CHECK</button></td>
+              </tr>
+            </table>
+          </td>
+          <td >
+            <table>
+              <tr class="rondjes">
+                <td><button id="clearButton" class="clearButton" onclick="allClear()" disabled>RESET</button></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>      
+      </div>
+      <br><h1 id="resultaat"></h1>
+    </div>
+  
+  <script src="script.js"></script>
+  </body>
+</html>
