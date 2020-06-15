@@ -200,9 +200,19 @@ var allClear= function(){
   document.getElementById('green').disabled = true;
   document.getElementById('yellow').disabled = true;
 }
-
-
-
+ var verwijder = function() {
+   if(document.querySelector(".active")){
+     if(document.querySelector(".active").previousElementSibling){
+      document.querySelector(".active").previousElementSibling.className ="circle";
+      document.querySelector(".active").previousElementSibling.classList += " active"
+      document.getElementsByClassName("active")[1].classList.remove("active");
+    }
+   }else{
+    document.querySelector(".active-row").lastElementChild.className="circle";
+    document.querySelector(".active-row").lastElementChild.classList += " active"
+   }
+   kies.pop()
+ }
 
 
 

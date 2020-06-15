@@ -80,7 +80,7 @@ padding-left: ;
 }
 #game{
   width: 500px;
-  height: 95vh;
+  height: 900px;
   background-color: #203862;
   margin: 20px auto;
   text-align: center;
@@ -134,6 +134,9 @@ padding-left: ;
 }
 .white{
   background-color:white;
+}
+.default{
+  background-color: #9097a1;
 }
 .btn-md{
   width: inherit;
@@ -192,5 +195,23 @@ padding-left: ;
   outline: none;
 }
 .clearButton:hover:enabled{
+  background-color: #e5e5e5;
+}
+.verwijderButton{
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: black;
+  font-size: small;
+}
+.verwijderButton:active{
+  transform: scale(0.93);
+}
+.verwijderButton:focus{
+  outline: none;
+}
+.verwijderButton:hover:enabled{
   background-color: #e5e5e5;
 }
