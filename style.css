@@ -161,7 +161,7 @@ padding-left: ;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #bebcb0;
+  background-color: #e55c00;
   color: black;
   font-size: small;
 }
@@ -172,7 +172,7 @@ padding-left: ;
   outline: none;
 }
 .checkButton:hover:enabled{
-  background-color: #eeecdd;
+  background-color: #b24800;
 }
 
 .clearButton{
@@ -180,7 +180,7 @@ padding-left: ;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #523483;
+  background-color: #ffffff;
   color: black;
   font-size: small;
 }
@@ -191,5 +191,5 @@ padding-left: ;
   outline: none;
 }
 .clearButton:hover:enabled{
-  background-color: #5c3a92;
+  background-color: #e5e5e5;
 }

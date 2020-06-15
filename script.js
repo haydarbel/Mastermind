@@ -8,7 +8,7 @@ let kies = [];
 
 let actifeLine = document.getElementsByClassName('active-row');
 
-var signal = document.getElementById('allRondjes');
+// var signal = document.getElementById('allRondjes');
 
 let guessRow=document.getElementById('guess-row');
 
@@ -26,18 +26,29 @@ var poningen = 8;
 
 var line8 = document.getElementById("line8");
 
+const startButton = document.getElementsByClassName("opbuttons")[0];
+
+
 var start = function () {
   generate();
   line8.className += "active-row"
   line8.firstElementChild.className += " active";
   document.getElementById('checkButton').disabled = false;
-  document.getElementById('clearButton').disabled = false;
   document.getElementById('start-button').disabled = true;
   document.getElementById('red').disabled = false;
   document.getElementById('blue').disabled = false;
   document.getElementById('green').disabled = false;
   document.getElementById('yellow').disabled = false;
-
+  startButton.innerHTML=""
+  var buttonCover=document.createElement("td");
+  var resetButton=document.createElement("button");
+  resetButton.className = "clearButton"
+  resetButton.id="clearButton"
+  resetButton.onclick = allClear;
+  resetButton.innerHTML="RESET"
+  buttonCover.appendChild(resetButton);
+  startButton.appendChild(buttonCover);
+  document.getElementById('clearButton').disabled = false;
 };
 
 var generate = function () {
@@ -168,12 +179,26 @@ var allClear= function(){
     document.getElementsByClassName("active")[0].classList.remove("active");
   };
   document.getElementById("resultaat").innerHTML="";
-  document.getElementById('start-button').disabled = false;
+  // document.getElementById('start-button').disabled = false;
   document.getElementById('clearButton').disabled = true;
   for(let i=0; i<4; i++){
     guessRow.getElementsByClassName('circle')[i].innerHTML="";
     guessRow.getElementsByClassName('circle')[i].innerHTML="?";
   }
+  startButton.innerHTML=""
+  var buttonCover=document.createElement("td");
+  var strButton=document.createElement("button");
+  strButton.className = "start-button"
+  strButton.id="start-button"
+  strButton.onclick = start;
+  strButton.innerHTML="START"
+  buttonCover.appendChild(strButton);
+  startButton.appendChild(buttonCover);
+  document.getElementById('start-button').disabled = false;
+  document.getElementById('red').disabled = true;
+  document.getElementById('blue').disabled = true;
+  document.getElementById('green').disabled = true;
+  document.getElementById('yellow').disabled = true;
 }
 
 
